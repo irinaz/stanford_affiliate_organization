@@ -5,19 +5,6 @@
  */
 
 /**
- * Implements hook_block_class_features_default_class().
- */
-function stanford_affiliate_organization_block_class_features_default_class() {
-  return array(
-    'bean:jumpstart-affiliated-programs' => array(
-      'module' => 'bean',
-      'delta' => 'jumpstart-affiliated-programs',
-      'css_classes' => 'well',
-    ),
-  );
-}
-
-/**
  * Implements hook_ctools_plugin_api().
  */
 function stanford_affiliate_organization_ctools_plugin_api($module = NULL, $api = NULL) {

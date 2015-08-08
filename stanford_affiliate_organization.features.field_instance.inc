@@ -183,7 +183,7 @@ function stanford_affiliate_organization_field_default_field_instances() {
     'bundle' => 'affiliate_organization',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Enter url for an affiliate organization / partner ',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -235,6 +235,7 @@ function stanford_affiliate_organization_field_default_field_instances() {
   // Translatables
   // Included for use with string extractors like potx.
   t('About');
+  t('Enter url for an affiliate organization / partner ');
   t('Image');
   t('Link');
 
