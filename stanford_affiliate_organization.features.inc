@@ -25,7 +25,7 @@ function stanford_affiliate_organization_views_api($module = NULL, $api = NULL) 
  */
 function stanford_affiliate_organization_node_info() {
   $items = array(
-    'affiliate_organization' => array(
+    'stanford_affiliate_organization' => array(
       'name' => t('Affiliate Organization'),
       'base' => 'node_content',
       'description' => '',

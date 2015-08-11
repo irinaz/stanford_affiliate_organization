@@ -11,8 +11,8 @@ function stanford_affiliate_organization_views_default_views() {
   $export = array();
 
   $view = new view();
-  $view->name = 'affiliates';
-  $view->description = '';
+  $view->name = 'stanford_affiliates';
+  $view->description = 'A manage content view for Stanford Affiliate Organization content types';
   $view->tag = 'default';
   $view->base_table = 'node';
   $view->human_name = 'Affiliates';
@@ -87,19 +87,19 @@ function stanford_affiliate_organization_views_default_views() {
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
-    'affiliate_organization' => 'affiliate_organization',
+    'stanford_affiliate_organization' => 'stanford_affiliate_organization',
   );
 
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block');
-  $export['affiliates'] = $view;
+  $export['stanford_affiliates'] = $view;
 
   $view = new view();
-  $view->name = 'stanford_affiliate_partner_manage';
+  $view->name = 'stanford_affiliate_organization_manage';
   $view->description = '';
   $view->tag = 'default';
   $view->base_table = 'node';
-  $view->human_name = 'Stanford Affiliate Partner: Manage';
+  $view->human_name = 'Stanford Affiliate Organization: Manage';
   $view->core = 7;
   $view->api_version = '3.0';
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
@@ -334,7 +334,7 @@ function stanford_affiliate_organization_views_default_views() {
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
-    'affiliate_organization' => 'affiliate_organization',
+    'stanford_affiliate_organization' => 'stanford_affiliate_organization',
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
   /* Filter criterion: Content: Title */
@@ -374,9 +374,9 @@ function stanford_affiliate_organization_views_default_views() {
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
-  $handler->display->display_options['path'] = 'admin/manage/page';
+  $handler->display->display_options['path'] = 'admin/manage/stanford_affiliate_organizations';
   $handler->display->display_options['menu']['type'] = 'normal';
-  $handler->display->display_options['menu']['title'] = 'Manage Pages';
+  $handler->display->display_options['menu']['title'] = 'Manage Affiliate Organizations';
   $handler->display->display_options['menu']['weight'] = '';
   $handler->display->display_options['menu']['name'] = 'menu-manage-content-by-type';
   $handler->display->display_options['menu']['context'] = 0;
