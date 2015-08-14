@@ -28,3 +28,4 @@ features[views_view][] = stanford_affiliate_partner_manage
 features_exclude[dependencies][ctools] = ctools
 features_exclude[field_base][body] = body
 features_exclude[field_base][field_image] = field_image
+project status url = https://github.com/SU-SWS/stanford_affiliate_organization
