@@ -10,9 +10,9 @@
 function stanford_affiliate_organization_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-affiliate_organization-body'
-  $field_instances['node-affiliate_organization-body'] = array(
-    'bundle' => 'affiliate_organization',
+  // Exported field_instance: 'stanford-node-affiliate_organization-body'
+  $field_instances['stanford-node-affiliate_organization-body'] = array(
+    'bundle' => 'stanford_affiliate_organization',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -81,9 +81,9 @@ function stanford_affiliate_organization_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-affiliate_organization-field_image'
-  $field_instances['node-affiliate_organization-field_image'] = array(
-    'bundle' => 'affiliate_organization',
+  // Exported field_instance: 'stanford-node-affiliate_organization-field_image'
+  $field_instances['stanford-node-affiliate_organization-field_image'] = array(
+    'bundle' => 'stanford_affiliate_organization',
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -178,9 +178,9 @@ function stanford_affiliate_organization_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-affiliate_organization-field_s_affiliate_link'
-  $field_instances['node-affiliate_organization-field_s_affiliate_link'] = array(
-    'bundle' => 'affiliate_organization',
+  // Exported field_instance: 'stanford-node-affiliate_organization-field_s_affiliate_link'
+  $field_instances['stanford-node-affiliate_organization-field_s_affiliate_link'] = array(
+    'bundle' => 'stanford_affiliate_organization',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => 'Enter url for an affiliate organization / partner ',
