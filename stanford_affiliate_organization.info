@@ -1,5 +1,5 @@
 name = Stanford Affiliate Organization
-description = Simple Content type to add Affiliate Organization / Partner and block view
+description = Affiliate Organizations / Collaborators content type
 core = 7.x
 package = Stanford
 version = 7.x-2.0
