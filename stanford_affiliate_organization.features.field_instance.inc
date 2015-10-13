@@ -89,11 +89,11 @@ function stanford_affiliate_organization_field_default_field_instances() {
     'description' => 'Upload a logo or image representing this organization',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
-          'image_link' => '',
-          'image_style' => '',
+          'image_link' => 'file',
+          'image_style' => 'medium',
         ),
         'type' => 'image',
         'weight' => 0,
