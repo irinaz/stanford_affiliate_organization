@@ -24,5 +24,6 @@ features[variable][] = menu_parent_stanford_affiliate_organization
 features[variable][] = node_options_stanford_affiliate_organization
 features[variable][] = node_preview_stanford_affiliate_organization
 features[variable][] = node_submitted_stanford_affiliate_organization
+features[variable][] = pathauto_node_stanford_affiliate_organization_pattern
 features_exclude[field_base][body] = body
 project status url = https://github.com/SU-SWS/stanford_affiliate_organization
