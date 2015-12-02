@@ -101,7 +101,7 @@ function stanford_affiliate_organization_views_views_default_views() {
 
   /* Display: Two Stacked Block */
   $handler = $view->new_display('block', 'Two Stacked Block', 'two_stacked_block');
-  $handler->display->display_options['link_url'] = 'affiliates';
+  $handler->display->display_options['link_url'] = 'about/affiliate-organizations';
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '2';
@@ -304,7 +304,7 @@ function stanford_affiliate_organization_views_views_default_views() {
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page_grid');
-  $handler->display->display_options['path'] = 'affiliates';
+  $handler->display->display_options['path'] = 'about/affiliate-organizations';
   $export['stanford_affiliates_grid_page'] = $view;
 
   $view = new view();
@@ -405,7 +405,7 @@ function stanford_affiliate_organization_views_views_default_views() {
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['defaults']['use_more_text'] = FALSE;
   $handler->display->display_options['use_more_text'] = 'See more affiliates';
-  $handler->display->display_options['link_url'] = 'affiliates';
+  $handler->display->display_options['link_url'] = 'about/affiliate-organizations';
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '5';
