@@ -199,12 +199,6 @@ function stanford_affiliate_organization_administration_views_default_views() {
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
-  /* Field: Content: Has new content */
-  $handler->display->display_options['fields']['timestamp']['id'] = 'timestamp';
-  $handler->display->display_options['fields']['timestamp']['table'] = 'history';
-  $handler->display->display_options['fields']['timestamp']['field'] = 'timestamp';
-  $handler->display->display_options['fields']['timestamp']['label'] = '';
-  $handler->display->display_options['fields']['timestamp']['element_label_colon'] = FALSE;
   /* Field: Content: Published */
   $handler->display->display_options['fields']['status']['id'] = 'status';
   $handler->display->display_options['fields']['status']['table'] = 'node';
@@ -222,6 +216,21 @@ function stanford_affiliate_organization_administration_views_default_views() {
   $handler->display->display_options['fields']['name']['relationship'] = 'uid';
   $handler->display->display_options['fields']['name']['label'] = 'Author';
   $handler->display->display_options['fields']['name']['link_to_user'] = FALSE;
+  /* Field: Content: Affiliate Type */
+  $handler->display->display_options['fields']['field_s_affiliate_type']['id'] = 'field_s_affiliate_type';
+  $handler->display->display_options['fields']['field_s_affiliate_type']['table'] = 'field_data_field_s_affiliate_type';
+  $handler->display->display_options['fields']['field_s_affiliate_type']['field'] = 'field_s_affiliate_type';
+  $handler->display->display_options['fields']['field_s_affiliate_type']['type'] = 'taxonomy_term_reference_plain';
+  $handler->display->display_options['fields']['field_s_affiliate_type']['delta_offset'] = '0';
+  /* Field: Content: Sorting Weight */
+  $handler->display->display_options['fields']['field_s_affiliate_weight']['id'] = 'field_s_affiliate_weight';
+  $handler->display->display_options['fields']['field_s_affiliate_weight']['table'] = 'field_data_field_s_affiliate_weight';
+  $handler->display->display_options['fields']['field_s_affiliate_weight']['field'] = 'field_s_affiliate_weight';
+  $handler->display->display_options['fields']['field_s_affiliate_weight']['label'] = 'Weight';
+  $handler->display->display_options['fields']['field_s_affiliate_weight']['settings'] = array(
+    'thousand_separator' => ',',
+    'prefix_suffix' => 1,
+  );
   /* Field: Content: Nid */
   $handler->display->display_options['fields']['nid']['id'] = 'nid';
   $handler->display->display_options['fields']['nid']['table'] = 'node';
