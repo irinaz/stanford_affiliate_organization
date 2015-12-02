@@ -23,7 +23,8 @@ function stanford_affiliate_organization_field_group_info() {
     'label' => 'Advanced',
     'weight' => '7',
     'children' => array(
-      0 => 'field_s_affiliate_weight',
+      0 => 'field_s_affiliate_type',
+      1 => 'field_s_affiliate_weight',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(

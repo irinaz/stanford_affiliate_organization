@@ -249,7 +249,7 @@ function stanford_affiliate_organization_field_default_field_instances() {
     'bundle' => 'stanford_affiliate_organization',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Select the appropriate affiliate type(s) for this organization.',
+    'description' => 'If appropriate, select the affiliate type(s) for this organization.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -328,7 +328,7 @@ function stanford_affiliate_organization_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 11,
+      'weight' => 7,
     ),
   );
 
@@ -337,9 +337,9 @@ function stanford_affiliate_organization_field_default_field_instances() {
   t('About');
   t('Affiliate Type');
   t('Enter url for an affiliate organization / partner ');
+  t('If appropriate, select the affiliate type(s) for this organization.');
   t('Image');
   t('Link');
-  t('Select the appropriate affiliate type(s) for this organization.');
   t('Sorting Weight');
   t('This integer field is used to control the sort order in views displays. Larger numbers are "heavier" and sink lower in the list.');
   t('Upload a logo or image representing this organization');
