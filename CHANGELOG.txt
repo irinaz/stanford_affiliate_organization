@@ -1,0 +1,6 @@
+Stanford Affiliate Organization x.x-x.x xxxx-xx-xx
+--------------------------------
+
+Stanford Affiliate Organization 7.x-1.0 2015-10-30
+---------------------------------------
+- Initial Release
