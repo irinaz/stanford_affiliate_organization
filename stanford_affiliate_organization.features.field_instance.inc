@@ -77,7 +77,7 @@ function stanford_affiliate_organization_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 4,
+      'weight' => 3,
     ),
   );
 
@@ -182,7 +182,7 @@ function stanford_affiliate_organization_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
-      'weight' => 2,
+      'weight' => 1,
     ),
   );
 
@@ -239,16 +239,103 @@ function stanford_affiliate_organization_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 3,
+      'weight' => 2,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'node-stanford_affiliate_organization-field_s_affiliate_type'
+  $field_instances['node-stanford_affiliate_organization-field_s_affiliate_type'] = array(
+    'bundle' => 'stanford_affiliate_organization',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'If appropriate, select the affiliate type(s) for this organization.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 3,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_s_affiliate_type',
+    'label' => 'Affiliate Type',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 6,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'node-stanford_affiliate_organization-field_s_affiliate_weight'
+  $field_instances['node-stanford_affiliate_organization-field_s_affiliate_weight'] = array(
+    'bundle' => 'stanford_affiliate_organization',
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => 'This integer field is used to control the sort order in views displays. Larger numbers are "heavier" and sink lower in the list.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 4,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_s_affiliate_weight',
+    'label' => 'Sorting Weight',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 7,
     ),
   );
 
   // Translatables
   // Included for use with string extractors like potx.
   t('About');
+  t('Affiliate Type');
   t('Enter url for an affiliate organization / partner ');
+  t('If appropriate, select the affiliate type(s) for this organization.');
   t('Image');
   t('Link');
+  t('Sorting Weight');
+  t('This integer field is used to control the sort order in views displays. Larger numbers are "heavier" and sink lower in the list.');
   t('Upload a logo or image representing this organization');
 
   return $field_instances;

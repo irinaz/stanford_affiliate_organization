@@ -50,16 +50,16 @@ function stanford_affiliate_organization_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '7',
+          'weight' => '10',
         ),
         'title' => array(
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '5',
+          'weight' => '8',
         ),
         'redirect' => array(
-          'weight' => '6',
+          'weight' => '9',
         ),
       ),
       'display' => array(),
@@ -103,6 +103,13 @@ function stanford_affiliate_organization_strongarm() {
   $strongarm->name = 'node_submitted_stanford_affiliate_organization';
   $strongarm->value = 0;
   $export['node_submitted_stanford_affiliate_organization'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_node_stanford_affiliate_organization_pattern';
+  $strongarm->value = 'affiliates/[node:title]';
+  $export['pathauto_node_stanford_affiliate_organization_pattern'] = $strongarm;
 
   return $export;
 }
