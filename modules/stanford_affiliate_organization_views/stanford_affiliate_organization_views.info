@@ -12,4 +12,5 @@ features[features_api][] = api:2
 features[views_view][] = stanford_affiliates
 features[views_view][] = stanford_affiliates_grid_page
 features[views_view][] = stanford_affiliates_large_block
+features[views_view][] = stanford_affiliates_list_page
 features[views_view][] = stanford_affiliates_stacked_block
