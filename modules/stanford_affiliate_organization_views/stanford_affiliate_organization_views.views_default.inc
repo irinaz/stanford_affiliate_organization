@@ -534,6 +534,60 @@ function stanford_affiliate_organization_views_views_default_views() {
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page_grid');
   $handler->display->display_options['path'] = 'about/affiliate-organizations/list';
+
+  /* Display: Page with titles */
+  $handler = $view->new_display('page', 'Page with titles', 'page_1');
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Link */
+  $handler->display->display_options['fields']['field_s_affiliate_link']['id'] = 'field_s_affiliate_link';
+  $handler->display->display_options['fields']['field_s_affiliate_link']['table'] = 'field_data_field_s_affiliate_link';
+  $handler->display->display_options['fields']['field_s_affiliate_link']['field'] = 'field_s_affiliate_link';
+  $handler->display->display_options['fields']['field_s_affiliate_link']['label'] = '';
+  $handler->display->display_options['fields']['field_s_affiliate_link']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_s_affiliate_link']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_s_affiliate_link']['click_sort_column'] = 'url';
+  $handler->display->display_options['fields']['field_s_affiliate_link']['type'] = 'link_plain';
+  /* Field: Content: Image */
+  $handler->display->display_options['fields']['field_s_affiliate_image']['id'] = 'field_s_affiliate_image';
+  $handler->display->display_options['fields']['field_s_affiliate_image']['table'] = 'field_data_field_s_affiliate_image';
+  $handler->display->display_options['fields']['field_s_affiliate_image']['field'] = 'field_s_affiliate_image';
+  $handler->display->display_options['fields']['field_s_affiliate_image']['label'] = '';
+  $handler->display->display_options['fields']['field_s_affiliate_image']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['field_s_affiliate_image']['alter']['path'] = '[field_s_affiliate_link]';
+  $handler->display->display_options['fields']['field_s_affiliate_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_s_affiliate_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_s_affiliate_image']['settings'] = array(
+    'image_style' => 'sm-profile-scaled',
+    'image_link' => '',
+  );
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['title']['alter']['text'] = '<a href="[field_s_affiliate_link]">[title]</a>';
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
+  /* Field: Content: Edit link */
+  $handler->display->display_options['fields']['edit_node']['id'] = 'edit_node';
+  $handler->display->display_options['fields']['edit_node']['table'] = 'views_entity_node';
+  $handler->display->display_options['fields']['edit_node']['field'] = 'edit_node';
+  $handler->display->display_options['fields']['edit_node']['label'] = '';
+  $handler->display->display_options['fields']['edit_node']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['edit_node']['alter']['text'] = '[edit_node]';
+  $handler->display->display_options['fields']['edit_node']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['edit_node']['text'] = 'Edit';
+  /* Field: Global: Edit link rewrite */
+  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['ui_name'] = 'Global: Edit link rewrite';
+  $handler->display->display_options['fields']['nothing']['label'] = '';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<br>
+<div class="edit-link">[edit_node]</div>';
+  $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
+  $handler->display->display_options['path'] = 'about/affiliate-organizations/list/titles';
   $export['stanford_affiliates_list_page'] = $view;
 
   $view = new view();
