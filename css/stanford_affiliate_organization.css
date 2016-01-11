@@ -4,6 +4,8 @@
 /* Spacing between affiliate image and title */
 
 .view-stanford-affiliates-grid-page .views-field-title,
-.view-stanford-affiliates-list-page .views-field-title {
+.view-stanford-affiliates-list-page .views-field-title,
+.view-stanford-affiliates-large-block .views-field-title,
+.view-stanford-affiliates-stacked-block .views-field-title {
     margin-top: 1em;
 }
