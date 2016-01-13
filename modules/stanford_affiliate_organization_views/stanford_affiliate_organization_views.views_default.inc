@@ -269,6 +269,8 @@ function stanford_affiliate_organization_views_views_default_views() {
   $handler->display->display_options['fields']['nothing']['label'] = '';
   $handler->display->display_options['fields']['nothing']['alter']['text'] = '<br>
 <div class="edit-link">[edit_node]</div>';
+  $handler->display->display_options['fields']['nothing']['element_type'] = 'div';
+  $handler->display->display_options['fields']['nothing']['element_label_type'] = 'div';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   $handler->display->display_options['path'] = 'about/affiliate-organizations/titles';
   $export['stanford_affiliates_grid_page'] = $view;
@@ -436,6 +438,8 @@ function stanford_affiliate_organization_views_views_default_views() {
   $handler->display->display_options['fields']['nothing']['label'] = '';
   $handler->display->display_options['fields']['nothing']['alter']['text'] = '<br>
 <div class="edit-link">[edit_node]</div>';
+  $handler->display->display_options['fields']['nothing']['element_type'] = 'div';
+  $handler->display->display_options['fields']['nothing']['element_label_type'] = 'div';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   $export['stanford_affiliates_large_block'] = $view;
 
@@ -608,6 +612,8 @@ function stanford_affiliate_organization_views_views_default_views() {
   $handler->display->display_options['fields']['nothing']['label'] = '';
   $handler->display->display_options['fields']['nothing']['alter']['text'] = '<br>
 <div class="edit-link">[edit_node]</div>';
+  $handler->display->display_options['fields']['nothing']['element_type'] = 'div';
+  $handler->display->display_options['fields']['nothing']['element_label_type'] = 'div';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   $handler->display->display_options['path'] = 'about/affiliate-organizations/list/titles';
   $export['stanford_affiliates_list_page'] = $view;
