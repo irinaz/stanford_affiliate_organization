@@ -712,10 +712,6 @@ function stanford_affiliate_organization_views_views_default_views() {
   $handler->display->display_options['fields']['nothing']['element_type'] = 'div';
   $handler->display->display_options['fields']['nothing']['element_label_type'] = 'div';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
-  /* Field: Content: Affiliate Type */
-  $handler->display->display_options['fields']['field_s_affiliate_type']['id'] = 'field_s_affiliate_type';
-  $handler->display->display_options['fields']['field_s_affiliate_type']['table'] = 'field_data_field_s_affiliate_type';
-  $handler->display->display_options['fields']['field_s_affiliate_type']['field'] = 'field_s_affiliate_type';
   /* Sort criterion: Content: Sorting Weight (field_s_affiliate_weight) */
   $handler->display->display_options['sorts']['field_s_affiliate_weight_value']['id'] = 'field_s_affiliate_weight_value';
   $handler->display->display_options['sorts']['field_s_affiliate_weight_value']['table'] = 'field_data_field_s_affiliate_weight';
