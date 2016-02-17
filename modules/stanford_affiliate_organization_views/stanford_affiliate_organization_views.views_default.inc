@@ -219,7 +219,7 @@ function stanford_affiliate_organization_views_views_default_views() {
   $handler->display->display_options['path'] = 'about/affiliate-organizations';
 
   /* Display: Page with titles */
-  $handler = $view->new_display('page', 'Page with titles', 'titles_page');
+  $handler = $view->new_display('page', 'Page with titles', 'page_1');
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Link */
   $handler->display->display_options['fields']['field_s_affiliate_link']['id'] = 'field_s_affiliate_link';
