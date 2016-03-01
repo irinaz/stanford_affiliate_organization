@@ -216,7 +216,7 @@ function stanford_affiliate_organization_views_views_default_views() {
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page_grid');
-  $handler->display->display_options['path'] = 'about/affiliate-organizations';
+  $handler->display->display_options['path'] = 'affiliate-organizations';
 
   /* Display: Page with titles */
   $handler = $view->new_display('page', 'Page with titles', 'page_1');
@@ -274,7 +274,7 @@ function stanford_affiliate_organization_views_views_default_views() {
   $handler->display->display_options['fields']['nothing']['element_type'] = 'div';
   $handler->display->display_options['fields']['nothing']['element_label_type'] = 'div';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
-  $handler->display->display_options['path'] = 'about/affiliate-organizations/titles';
+  $handler->display->display_options['path'] = 'affiliate-organizations/titles';
 
   /* Display: Page Grouped */
   $handler = $view->new_display('page', 'Page Grouped', 'grouped_page');
@@ -368,7 +368,7 @@ function stanford_affiliate_organization_views_views_default_views() {
   $handler->display->display_options['sorts']['title']['id'] = 'title';
   $handler->display->display_options['sorts']['title']['table'] = 'node';
   $handler->display->display_options['sorts']['title']['field'] = 'title';
-  $handler->display->display_options['path'] = 'about/affiliate-organizations/grouped';
+  $handler->display->display_options['path'] = 'affiliate-organizations/grouped';
 
   /* Display: Page Grouped with Titles */
   $handler = $view->new_display('page', 'Page Grouped with Titles', 'grouped_titles_page');
@@ -471,7 +471,7 @@ function stanford_affiliate_organization_views_views_default_views() {
   $handler->display->display_options['sorts']['title']['id'] = 'title';
   $handler->display->display_options['sorts']['title']['table'] = 'node';
   $handler->display->display_options['sorts']['title']['field'] = 'title';
-  $handler->display->display_options['path'] = 'about/affiliate-organizations/titles/grouped';
+  $handler->display->display_options['path'] = 'affiliate-organizations/titles/grouped';
   $export['stanford_affiliates_grid_page'] = $view;
 
   $view = new view();
@@ -578,7 +578,7 @@ function stanford_affiliate_organization_views_views_default_views() {
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['defaults']['use_more_text'] = FALSE;
   $handler->display->display_options['use_more_text'] = 'See more affiliates';
-  $handler->display->display_options['link_url'] = 'about/affiliate-organizations';
+  $handler->display->display_options['link_url'] = 'affiliate-organizations';
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '5';
@@ -758,7 +758,7 @@ function stanford_affiliate_organization_views_views_default_views() {
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
-  $handler->display->display_options['path'] = 'about/affiliate-organizations/list';
+  $handler->display->display_options['path'] = 'affiliate-organizations/list';
 
   /* Display: Page with titles */
   $handler = $view->new_display('page', 'Page with titles', 'page_1');
@@ -814,7 +814,7 @@ function stanford_affiliate_organization_views_views_default_views() {
   $handler->display->display_options['fields']['nothing']['element_type'] = 'div';
   $handler->display->display_options['fields']['nothing']['element_label_type'] = 'div';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
-  $handler->display->display_options['path'] = 'about/affiliate-organizations/list/titles';
+  $handler->display->display_options['path'] = 'affiliate-organizations/list/titles';
 
   /* Display: Grouped Page */
   $handler = $view->new_display('page', 'Grouped Page', 'grouped_page');
@@ -908,7 +908,7 @@ function stanford_affiliate_organization_views_views_default_views() {
   $handler->display->display_options['sorts']['title']['id'] = 'title';
   $handler->display->display_options['sorts']['title']['table'] = 'node';
   $handler->display->display_options['sorts']['title']['field'] = 'title';
-  $handler->display->display_options['path'] = 'about/affiliate-organizations/list/grouped';
+  $handler->display->display_options['path'] = 'affiliate-organizations/list/grouped';
 
   /* Display: Grouped Page with Titles */
   $handler = $view->new_display('page', 'Grouped Page with Titles', 'grouped_titles_page');
@@ -1013,7 +1013,7 @@ function stanford_affiliate_organization_views_views_default_views() {
   $handler->display->display_options['sorts']['title']['id'] = 'title';
   $handler->display->display_options['sorts']['title']['table'] = 'node';
   $handler->display->display_options['sorts']['title']['field'] = 'title';
-  $handler->display->display_options['path'] = 'about/affiliate-organizations/list/titles/grouped';
+  $handler->display->display_options['path'] = 'affiliate-organizations/list/titles/grouped';
   $export['stanford_affiliates_list_page'] = $view;
 
   $view = new view();
@@ -1114,11 +1114,11 @@ function stanford_affiliate_organization_views_views_default_views() {
 
   /* Display: Two Stacked Block */
   $handler = $view->new_display('block', 'Two Stacked Block', 'two_stacked_block');
-  $handler->display->display_options['link_url'] = 'about/affiliate-organizations';
+  $handler->display->display_options['link_url'] = 'affiliate-organizations';
 
   /* Display: Two Stacked Block with Titles */
   $handler = $view->new_display('block', 'Two Stacked Block with Titles', 'two_stacked_block_titles');
-  $handler->display->display_options['link_url'] = 'about/affiliate-organizations';
+  $handler->display->display_options['link_url'] = 'affiliate-organizations';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Link */
   $handler->display->display_options['fields']['field_s_affiliate_link']['id'] = 'field_s_affiliate_link';
