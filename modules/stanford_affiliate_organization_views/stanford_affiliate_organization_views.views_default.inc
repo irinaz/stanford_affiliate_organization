@@ -1114,11 +1114,11 @@ function stanford_affiliate_organization_views_views_default_views() {
 
   /* Display: Two Stacked Block */
   $handler = $view->new_display('block', 'Two Stacked Block', 'two_stacked_block');
-  $handler->display->display_options['link_url'] = 'about/affiliate-organizations';
+  $handler->display->display_options['link_url'] = 'affiliate-organizations';
 
   /* Display: Two Stacked Block with Titles */
   $handler = $view->new_display('block', 'Two Stacked Block with Titles', 'two_stacked_block_titles');
-  $handler->display->display_options['link_url'] = 'about/affiliate-organizations';
+  $handler->display->display_options['link_url'] = 'affiliate-organizations';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Link */
   $handler->display->display_options['fields']['field_s_affiliate_link']['id'] = 'field_s_affiliate_link';
