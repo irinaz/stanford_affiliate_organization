@@ -1,7 +1,7 @@
 #[Stanford Affiliate Organization](https://github.com/SU-SWS/stanford_affiliate_organization)
-##### Version: 7.x-1.0
+##### Version: 7.x-1.2
 
-Basic content type and block view for affiliate organization
+Basic content type for affiliate organization.
 
 Installation
 ---
